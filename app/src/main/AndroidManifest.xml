@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:windowSoftInputMode="adjustPan"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="饕串燒酒場"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication_Firebase"
+        tools:targetApi="31">
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".databaseActivity2"
+            android:allowBackup="true"
+            android:exported="false" />
+        <activity
+            android:name=".bookingMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".foodMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
